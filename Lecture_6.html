@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Practice 6</title>
+  </head>
+  <body>
+    <!-- Opens a link to Google in a new tab -->
+    <a target="_blank" href="https://google.com">Google</a>
+
+    <!-- Scrolls to the section with ID "section4" -->
+    <a href="#section4">Scroll</a>
+
+    <!-- Paragraph with dummy content (Lorem Ipsum) for text testing -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi
+      ...
+      <!-- content intentionally kept unchanged -->
+    </p>
+
+    <!-- Another paragraph of dummy text for layout testing -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ...
+      <!-- content intentionally kept unchanged -->
+    </p>
+
+    <!-- Third paragraph, also with dummy content -->
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit corrupti
+      ...
+      <!-- content intentionally kept unchanged -->
+    </p>
+
+    <!-- Paragraph with an id used for internal link navigation -->
+    <p id="section4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi veritatis
+      ...
+      <!-- content intentionally kept unchanged -->
+    </p>
+
+    <!-- Displays an image with fixed width -->
+    <img src="/image.jpg" alt="My Image" width="500px" />
+
+    <!-- Responsive image using <picture>; displays different sources based on screen width -->
+    <picture>
+      <source media="(min-width: 650px)" srcset="/image.jpg" />
+      <img src="/image.jpg" alt="No Img" />
+    </picture>
+
+    <!-- Image with an image map to make specific areas clickable -->
+    <img src="/image.jpg" usemap="#image-map" />
+
+    <!-- Defines clickable areas on the image -->
+    <map name="image-map">
+      <!-- Rectangular clickable area that triggers JavaScript alert -->
+      <area
+        onclick="one()"
+        shape="rect"
+        coords="290,44,354,104"
+        target=""
+        href=""
+        alt="Area 1"
+        title=""
+      />
+      <!-- Another area with a different coordinate -->
+      <area
+        onclick="two()"
+        shape="rect"
+        coords="32,68,107,103"
+        target=""
+        href=""
+        alt="Area 2"
+        title=""
+      />
+    </map>
+
+    <!-- JavaScript functions to handle click events on image areas -->
+    <script>
+      function one() {
+        alert("You clicked on Area 1");
+      }
+
+      function two() {
+        alert("You clicked on Area 2");
+      }
+    </script>
+  </body>
+</html>

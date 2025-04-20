@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Practice 13</title>
+  </head>
+  <body>
+    <h2>🔠 Text Inputs</h2>
+    <form action="/submit" method="post">
+      <!-- 1. Text -->
+      <label>Text: <input type="text" name="text" /></label><br />
+
+      <!-- 2. Password -->
+      <label>Password: <input type="password" name="password" /></label><br />
+
+      <!-- 3. Email -->
+      <label>Email: <input type="email" name="email" /></label><br />
+
+      <!-- 4. Number -->
+      <label
+        >Number: <input type="number" name="number" min="1" max="10" /></label
+      ><br />
+
+      <!-- 5. Tel -->
+      <label>Phone Number: <input type="tel" name="tel" /></label><br />
+
+      <!-- 6. URL -->
+      <label>Website: <input type="url" name="url" /></label><br />
+
+      <!-- 7. Search -->
+      <label>Search: <input type="search" name="search" /></label><br />
+
+      <h2>📅 Date & Time Inputs</h2>
+
+      <!-- 8. Date -->
+      <label>Date: <input type="date" name="date" /></label><br />
+
+      <!-- 9. Time -->
+      <label>Time: <input type="time" name="time" /></label><br />
+
+      <!-- 10. Datetime-local -->
+      <label>Date & Time: <input type="datetime-local" name="datetime" /></label
+      ><br />
+
+      <!-- 11. Month -->
+      <label>Month: <input type="month" name="month" /></label><br />
+
+      <!-- 12. Week -->
+      <label>Week: <input type="week" name="week" /></label><br />
+
+      <h2>🎛️ Choices & Controls</h2>
+
+      <!-- 13. Checkbox -->
+      <label><input type="checkbox" name="subscribe" /> Subscribe</label><br />
+
+      <!-- 14. Radio -->
+      Gender:<br />
+      <label><input type="radio" name="gender" value="male" /> Male</label>
+      <label><input type="radio" name="gender" value="female" /> Female</label
+      ><br />
+
+      <!-- 15. Range -->
+      <label
+        >Range (1-100):
+        <input type="range" name="range" min="1" max="100" /></label
+      ><br />
+
+      <!-- 16. Color -->
+      <label>Pick a Color: <input type="color" name="color" /></label><br />
+
+      <!-- 17. File -->
+      <label>Upload File: <input type="file" name="file" /></label><br />
+
+      <h2>🔒 Hidden & Misc</h2>
+
+      <!-- 18. Hidden -->
+      <input type="hidden" name="userid" value="12345" />
+
+      <!-- 19. Image Button -->
+      <label
+        >Image as Submit:
+        <input
+          type="image"
+          src="https://via.placeholder.com/40"
+          alt="Submit"
+          width="40"
+          height="40"
+        /> </label
+      ><br />
+
+      <!-- 20. Button -->
+      <input
+        type="button"
+        value="Click Me!"
+        onclick="alert('Button Clicked')"
+      /><br />
+
+      <!-- 21. Submit -->
+      <input type="submit" value="Submit" /><br />
+
+      <!-- 22. Reset -->
+      <input type="reset" value="Reset" /><br />
+
+      <!-- 23. Datatype: Datalist + Input -->
+      <label
+        >Choose Editor:
+        <input list="editors" name="editor" />
+        <datalist id="editors">
+          <option value="VS Code" />
+          <option value="Sublime Text" />
+          <option value="Atom" />
+        </datalist> </label
+      ><br />
+
+      <!-- 24. Select Dropdown -->
+      <label
+        >Select Country:
+        <select name="country">
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+        </select> </label
+      ><br />
+
+      <!-- 25. Textarea -->
+      <label
+        >Comments:
+        <br />
+        <textarea name="comments" rows="4" cols="30"></textarea></label
+      ><br />
+    </form>
+  </body>
+</html>

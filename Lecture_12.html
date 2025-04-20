@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Practice 12</title>
+  </head>
+  <body>
+    <!-- Form starts here -->
+    <form action="/submit" method="post" autocomplete="off">
+      <!-- First Name Section -->
+      <label for="firstname">First Name</label>
+      <!-- This input allows users to type their first name -->
+      <!-- `type="text"` means a simple text field -->
+      <!-- `name="firstname"` is the key used when sending data to the server -->
+      <!-- `id="firstname"` is linked to the label using `for="firstname"` -->
+      <input type="text" name="firstname" id="firstname" />
+      <br />
+      <!-- Line break for spacing -->
+
+      <!-- Last Name Section -->
+      <label for="lastname">Last Name</label>
+      <!-- Similar to above, this input collects the user's last name -->
+      <input type="text" name="lastname" id="lastname" />
+      <br />
+
+      <!-- Date of Birth Section -->
+      <label for="dob">DOB</label>
+      <!-- `type="date"` shows a calendar date picker -->
+      <!-- Users can select their birth date -->
+      <input type="date" name="dob" id="dob" />
+      <br />
+
+      <!-- Submit Button -->
+      <!-- This button submits the form data to the URL in the `action` attribute -->
+      <!-- `type="submit"` is required for form submission -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
